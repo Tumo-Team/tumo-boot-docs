@@ -27,16 +27,16 @@ public static void main(String[] args){
 
 - **Intro**
   
-  - 1.**[项目介绍](docs/intro/1.intro.md)**
-  - 2.**[文档介绍](docs/intro/2.docs-introduce.md)**
-- 3.**[代码生成](docs/intro/3.generate.md)**
+  - **[1.项目介绍](docs/intro/1.intro.md)**
+  - **[2.文档介绍](docs/intro/2.docs-introduce.md)**
+  - **[3.代码生成](docs/intro/3.generate.md)**
+  - **[4.运行项目](docs/intro/4.run.md)**
   
 - **后端**
   
   - 1.项目设计
-    - [x] 1.1 环境准备
-    - [ ] 1.2 SpringBoot项目搭建
-    - [ ] 1.3 项目目录结构设计
+    - [x] [1.1 环境准备](docs/api/1.design/1.1environment.md)
+    - [x] [1.2 SpringBoot项目搭建](docs/api/1.design/1.2create-springboot.md)
     
   - 2.数据库设计
   	- [ ] 2.1 RBAC权限表设计
@@ -44,7 +44,7 @@ public static void main(String[] args){
     - [ ] 2.3 日志表设计
     
   - 3.Common模块封装
-	- [ ] 3.1 YML自定义配置
+    - [ ] 3.1 YML自定义配置
     - [ ] 3.2 Common-Core 模块封装
     - [ ] 3.3 Common-Auth模块封装
     - [ ] 3.4 Common-Mybatis模块封装
@@ -60,47 +60,49 @@ public static void main(String[] args){
   	- [ ] 5.1 Security基础配置
     - [ ] 5.2 自定义OAuth2响应结构
     - [ ] 5.3 重写OAuth2异常
+    - [ ] 5.4 权限功能设计
     
   - 6.Auth模块开发
   	- [ ] 6.1 登录、注销接口
     - [ ] 6.2 Vue前端对接登录接口
+    - [x] [6.3 验证码登录](docs/api/6.auth-module/6.3auth-captcha.md)
     
   - 7.System模块开发
- 	- [ ] 7.1 用户模块开发
-    - [ ] 7.2 角色、部门模块开发
-    - [ ] 7.3 菜单模块开发
-    
-  - 8.代码生成
-
+    - [ ] 7.1 用户模块开发
+  	- [ ] 7.2 角色、部门模块开发
+  	- [ ] 7.3 菜单模块开发
+  
+- 8.代码生成
   
 
-- 前端
-
+  
+- **前端**
   - 1.项目设计
-    - [ ] 1.1 环境准备
-    - [ ] 1.2 项目目录结构设计
-
+    - [x] [1.1 环境准备](docs/app/1.design/1.1environment.md)
+    - [x] [1.2 如何使用Tumo-AntV项目](docs/app/1.design/1.2use-tumo-antv.md)
+  - [x] [1.3 项目目录结构设计](docs/app/1.design/1.3project-directory.md)
+    
   - 2.基础模块封装
     - [ ] 2.1 项目Layout布局
     - [ ] 2.2 Axios、Router封装
     - [ ] 2.3 VueX封装
     - [ ] 2.4 前端交互流程
-
+  
   - 3.数据交互
     - [ ] 3.1 数据交互
     - [ ] 3.2 登录流程
     - [ ] 3.3 动态菜单
-
-  - 4.页面CRUD
+  
+- 4.页面CRUD
     - [ ] 4.1 页面开发
     - [ ] 4.2 Vue组件交互
     - [ ] 4.3 和后端数据交互
-
-  - 5.实践
+    
+- 5.实践
     - [ ] 5.1 新增页面
     - [ ] 5.2 CRUD
-
-  - 6.代码生成
+  
+- 6.代码生成
 
 
 
@@ -114,8 +116,10 @@ public static void main(String[] args){
 详细请看文档：[文档部署](docs/other/deploy.md)
 
 
+
 ## License
 
 [MIT](https://github.com/Tumo-Team/Tumo-Boot/blob/master/LICENSE)
 
 Copyright (c) 2020-present TyCoding
+
