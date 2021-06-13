@@ -70,8 +70,8 @@
   - [2.4 Router封装](docs/app/2.base/2.4router-package.md)
 
 - 3.数据交互
-  - [3.2 登录流程](docs/app/3.request/3.1request-login.md)
-  - [3.3 动态菜单](docs/app/3.request/3.2request-menu.md)
+  - [3.1 登录流程](docs/app/3.request/3.1request-login.md)
+  - [3.2 动态菜单](docs/app/3.request/3.2request-menu.md)
 
 - 4.页面CRUD
   - [4.1 新增页面](docs/app/4.crud/4.1new-page.md)
