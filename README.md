@@ -15,7 +15,6 @@
 - Tumo-Boot文档地址：[https://github.com/Tumo-Team/Tumo-Boot-Docs](https://github.com/Tumo-Team/Tumo-Boot-Docs)
 
 
-
 # Tumo Boot Docs
 
 ```java
@@ -34,21 +33,15 @@ public static void main(String[] args){
 
 ## Docs
 
+## 本地运行
 
-## Deploy
+```bash
+# 克隆本仓库
+$ git clone https://github.com/Tumo-Team/tumo-boot-docs.git
 
-本文档使用 [docsify](https://docsify.js.org/#/) ，推荐以下两种部署方式：
+# 或者使用 npm
+$ yarn install
 
-1. 使用 Github Pages 部署文档（缺点：国内访问速度慢）
-2. 使用自己的服务器，部署到Nginx（缺点：需要手动执行脚本）
-
-详细请看文档：[文档部署](docs/other/deploy.md)
-
-
-
-## License
-
-[MIT](https://github.com/Tumo-Team/Tumo-Boot/blob/master/LICENSE)
-
-Copyright (c) 2021-present TyCoding
-
+# 启动开发服务器
+$ yarn dev
+```
