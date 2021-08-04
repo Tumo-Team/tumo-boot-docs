@@ -2,7 +2,7 @@
 /**
  * @type {import('vitepress').UserConfig}
  */
-module.exports = {
+ module.exports = {
   base: '/',
   title: 'Tumo-Boot Docs',
   lang: 'zh-CN',
