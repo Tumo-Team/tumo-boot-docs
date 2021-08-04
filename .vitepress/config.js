@@ -132,6 +132,16 @@ function createNav() {
         },
       ],
     },
+    {
+      text: '扩展',
+      link: '/docs/extends/',
+      items: [
+        {
+          text: 'Docker部署',
+          link: '/docs/extends/docker/1-docker-install',
+        },
+      ],
+    },
   ];
 }
 
@@ -368,6 +378,34 @@ function createSidebar() {
           },
         ],
       },
+    ],
+
+    '/docs/extends': [
+      {
+        text: 'Docker部署',
+        children: [
+          {
+            text: 'Docker安装',
+            link: '/docs/extends/docker/1-docker-install',
+          },
+          {
+            text: 'Docker构建',
+            link: '/docs/extends/docker/2-docker-build',
+          },
+          {
+            text: '阿里云容器服务',
+            link: '/docs/extends/docker/3-docker-registry',
+          },
+          {
+            text: 'TumoBoot构建镜像',
+            link: '/docs/extends/docker/4-build-tumo-boot',
+          },
+          {
+            text: 'Docker容器间网络通信',
+            link: '/docs/extends/docker/5-docker-container-net',
+          },
+        ]
+      }
     ],
   };
 }
