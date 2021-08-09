@@ -1,12 +1,17 @@
 # 项目介绍
 
-**[Tumo-Boot](https://github.com/Tumo-Team/Tumo-Boot)** 是基于SpringBoot2.4.x、SpringSecurity开发的权限管理项目，前端基于Node、Vue2.x、Ant-Design-Vue开发。
+**[Tumo-Boot](https://github.com/Tumo-Team/tumo-boot)** 是基于SpringBoot2.5.x、SpringSecurity的RBAC项目脚手架，前端基于Node、Vue3.x、Ant-Design-Vue2.x、Vite、TypeScript。
+
+如果你已经熟悉了RBAC单体项目开发，你可以学习 **Tumo-Cloud：** [https://github.com/Tumo-Team/tumo-cloud](https://github.com/Tumo-Team/tumo-cloud)。
 
 ## 项目地址
 
-- **项目后端：** [https://github.com/Tumo-Team/Tumo-Boot](https://github.com/Tumo-Team/Tumo-Boot)
-- **项目前端：** [https://github.com/Tumo-Team/Tumo-Boot-Admin](https://github.com/Tumo-Team/Tumo-Boot-Admin)
-- **项目文档：** [https://github.com/Tumo-Team/Tumo-Boot-Docs](https://github.com/Tumo-Team/Tumo-Boot-Docs)
+- **在线预览：** [http://boot.tycoding.cn](http://boot.tycoding.cn)
+- **在线文档：** [http://docs.boot.tycoding.cn](http://docs.boot.tycoding.cn)
+
+- **后端源码：** [https://github.com/Tumo-Team/tumo-boot](https://github.com/Tumo-Team/tumo-boot)
+- **前端源码：** [https://github.com/Tumo-Team/tumo-boot-ui](https://github.com/Tumo-Team/tumo-boot-ui)
+- **文档源码：** [https://github.com/Tumo-Team/tumo-boot-docs](https://github.com/Tumo-Team/tumo-boot-docs)
 
 ## 技术栈
 
@@ -23,21 +28,19 @@
 
 | Name            | Version | Document                                                     |
 | --------------- | ------- | ------------------------------------------------------------ |
-| Spring Boot     | 2.4.3   | [https://docs.spring.io/spring-boot/docs/current/reference/html/](https://docs.spring.io/spring-boot/docs/current/reference/html/) |
-| Spring Security | 5.4.2   | [https://docs.spring.io/spring-security/site/docs/5.4.2/reference/html5/](https://docs.spring.io/spring-security/site/docs/5.4.2/reference/html5/) |
-| Mybatis-Plus    | 3.4.0   | [https://baomidou.com/guide/](https://baomidou.com/guide/)   |
-| Hutool          | 5.5.4   | [https://hutool.cn/docs/#/](https://hutool.cn/docs/#/)       |
-| Knife4j         | 3.0.2   | [https://doc.xiaominfo.com/knife4j/documentation/](https://doc.xiaominfo.com/knife4j/documentation/) |
+| Spring Boot     | 2.5.0   | [https://github.com/spring-projects/spring-boot](https://github.com/spring-projects/spring-boot) |
+| Spring Security | 5.5.0   | [https://github.com/spring-projects/spring-security](https://github.com/spring-projects/spring-security) |
+| Mybatis-Plus    | 3.4.3.1   | [https://baomidou.com/guide/](https://baomidou.com/guide/)   |
+| Hutool          | 5.7.2   | [https://hutool.cn/docs/#/](https://hutool.cn/docs/#/)       |
+| Knife4j         | 3.0.3   | [https://doc.xiaominfo.com/knife4j/documentation/](https://doc.xiaominfo.com/knife4j/documentation/) |
 
 **前端**
 
 | Name           | Version | Document                                                     |
 | -------------- | ------- | ------------------------------------------------------------ |
-| Vue.js         | 2.x     | [https://cn.vuejs.org/v2/guide/](https://cn.vuejs.org/v2/guide/) |
-| Axios          | 0.18.1  | [http://axios-js.com/zh-cn/docs/index.html](http://axios-js.com/zh-cn/docs/index.html) |
-| Vue-Router     | 3.0.2   | [https://router.vuejs.org/zh/installation.html](https://router.vuejs.org/zh/installation.html) |
-| Vuex           | 3.1.0   | [https://vuex.vuejs.org/zh/](https://vuex.vuejs.org/zh/)     |
-| Ant-Design-Vue | 1.7.2   | [https://www.antdv.com/docs/vue/introduce-cn/](https://www.antdv.com/docs/vue/introduce-cn/) |
+| Vben          | 2.6.1  | [https://github.com/anncwb/vue-vben-admin](https://github.com/anncwb/vue-vben-admin) |
+| Vue.js         | 3.1.5     | [https://cn.vuejs.org/v2/guide/](https://cn.vuejs.org/v2/guide/) |
+| Ant-Design-Vue | 2.2.2   | [https://www.antdv.com/docs/vue/introduce-cn/](https://www.antdv.com/docs/vue/introduce-cn/) |
 
 ## 项目结构
 
@@ -63,6 +66,8 @@
     │   │               │   ├── core			-- 公共层核心配置
     │   │               │   ├── log				-- 日志相关配置
     │   │               │   ├── mybatis			-- Mybatis相关配置
+    │   │               │   ├── oss			    -- OSS文件配置
+    │   │               │   ├── redis			-- Redis配置
     │   │               │   └── swagger			-- Swagger文档相关配置
     │   │               └── modules				-- 业务模块
     │   │                   ├── auth			-- 授权模块
@@ -89,26 +94,43 @@
 
 ```
 .
-├── Dockerfile			-- Docker镜像构建脚本
-├── dist				-- 项目构建后的静态文件目录
-├── docker				-- Docker构建镜像配置文件（Nginx配置）
-├── public				-- 静态资源目录（不被拦截）
+├── LICENSE
+├── README.md
+├── build					 -- 构建配置
+├── commitlint.config.js
+├── docker					 -- Docker构建脚本
+├── index.html
+├── jest.config.mjs
+├── mock
+├── node_modules
+├── package.json
+├── postcss.config.js
+├── prettier.config.js
+├── public
+├── script					 -- Docker启动脚本
 ├── src
-│   ├── App.vue
-│   ├── api				-- axios接口文件
-│   ├── assets			-- 项目静态资源目录（被拦截）
-│   ├── components		-- 项目公共层组件目录
-│   ├── directive		-- 项目公共层封装指令目录
-│   ├── filters			-- 项目公共层封装过滤器目录
-│   ├── icons			-- 项目图标目录
-│   ├── layout			-- 项目Layout布局组件
-│   ├── main.js
-│   ├── permission.js	-- VueRouter全局路由拦截器
-│   ├── router			-- 项目路由配置文件
-│   ├── settings.js		-- 项目通用设置配置
-│   ├── store			-- 项目Vuex配置文件
-│   ├── styles			-- 项目全局样式
-│   ├── utils			-- 工具类
-│   └── views			-- 项目页面
-└── vue.config.js
+│   ├── App.vue
+│   ├── api				  	-- 后端接口地址
+│   ├── assets				-- 静态资源文件
+│   ├── components		   -- 全局封装的组件
+│   ├── design
+│   ├── directives
+│   ├── enums
+│   ├── hooks
+│   ├── layouts			    -- Layout布局主键
+│   ├── locales			    -- 国际化
+│   ├── logics
+│   ├── main.ts
+│   ├── router			    -- 路由配置
+│   ├── settings		    -- 项目全局自定义配置
+│   ├── store			    -- VueStore配置
+│   ├── utils
+│   └── views			    -- 页面组件
+├── stylelint.config.js
+├── tailwind.config.js
+├── tests
+├── tsconfig.json
+├── types
+├── vite.config.ts
+└── yarn.lock
 ```
