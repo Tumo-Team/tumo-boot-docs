@@ -1,7 +1,7 @@
 version: "3.5"
 
 services:
-  tumo-boot-ui:
+  tumo-boot-docs:
     image: registry.cn-hangzhou.aliyuncs.com/tumo/tumo-boot-docs
     restart: always
     container_name: tumo-boot-docs

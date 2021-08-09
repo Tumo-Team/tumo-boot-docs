@@ -8,30 +8,50 @@
 </p>
 
 
-- Tumo-Boot演示地址：[http://boot.tycoding.cn](http://boot.tycoding.cn)
-- Tumo-Boot在线文档：[http://docs.boot.tycoding.cn](http://docs.boot.tycoding.cn)
-- Tumo-Boot后端地址：[https://github.com/Tumo-Team/Tumo-Boot](https://github.com/Tumo-Team/Tumo-Boot)
-- Tumo-Boot前端地址：[https://github.com/Tumo-Team/Tumo-Boot-UI](https://github.com/Tumo-Team/Tumo-Boot-UI)
-- Tumo-Boot文档地址：[https://github.com/Tumo-Team/Tumo-Boot-Docs](https://github.com/Tumo-Team/Tumo-Boot-Docs)
+- **在线预览：** [http://boot.tycoding.cn](http://boot.tycoding.cn)
+- **在线文档：** [http://docs.boot.tycoding.cn](http://docs.boot.tycoding.cn)
+
+- **后端源码：** [https://github.com/Tumo-Team/tumo-boot](https://github.com/Tumo-Team/tumo-boot)
+- **前端源码：** [https://github.com/Tumo-Team/tumo-boot-ui](https://github.com/Tumo-Team/tumo-boot-ui)
+- **文档源码：** [https://github.com/Tumo-Team/tumo-boot-docs](https://github.com/Tumo-Team/tumo-boot-docs)
 
 
-# Tumo Boot Docs
+# Tumo Boot
 
-```java
-public static void main(String[] args){
-    System.out.println("Hello Tumo Team!");
-}
-```
+**[Tumo-Boot](https://github.com/Tumo-Team/tumo-boot)** 是基于SpringBoot2.5.x、SpringSecurity的RBAC项目脚手架，前端基于Node、Vue3.x、Ant-Design-Vue2.x、Vite、TypeScript。
 
-**特点：**
+如果你已经熟悉了RBAC单体项目开发，你可以学习 **Tumo-Cloud：** [https://github.com/Tumo-Team/tumo-cloud](https://github.com/Tumo-Team/tumo-cloud)。
 
-1. 代码简洁、规范。
-2. 提供最后端系统最基础的权限体系模块。
-3. 项目文档将涉及前后端、运维，带你一步步学习怎么优雅的开发。
-4. 基于SpringBoot最新版，单体架构，前后端分离。前端采用Ant-Design-Vue。
-5. 提供最最最基础、完善的项目开发文档，所有源码及文档都开源在GitHub上。
 
-## Docs
+## 技术栈
+
+**环境**
+
+| Name  | Version    |
+| ----- | ---------- |
+| JDK   | 1.8        |
+| MySql | 5.7        |
+| OS    | MacOS10.14 |
+| IDEA  | 2020.2     |
+
+**后端**
+
+| Name            | Version | Document                                                     |
+| --------------- | ------- | ------------------------------------------------------------ |
+| Spring Boot     | 2.5.0   | [https://github.com/spring-projects/spring-boot](https://github.com/spring-projects/spring-boot) |
+| Spring Security | 5.5.0   | [https://github.com/spring-projects/spring-security](https://github.com/spring-projects/spring-security) |
+| Mybatis-Plus    | 3.4.3.1   | [https://baomidou.com/guide/](https://baomidou.com/guide/)   |
+| Hutool          | 5.7.2   | [https://hutool.cn/docs/#/](https://hutool.cn/docs/#/)       |
+| Knife4j         | 3.0.3   | [https://doc.xiaominfo.com/knife4j/documentation/](https://doc.xiaominfo.com/knife4j/documentation/) |
+
+**前端**
+
+| Name           | Version | Document                                                     |
+| -------------- | ------- | ------------------------------------------------------------ |
+| Vben          | 2.6.1  | [https://github.com/anncwb/vue-vben-admin](https://github.com/anncwb/vue-vben-admin) |
+| Vue.js         | 3.1.5     | [https://cn.vuejs.org/v2/guide/](https://cn.vuejs.org/v2/guide/) |
+| Ant-Design-Vue | 2.2.2   | [https://www.antdv.com/docs/vue/introduce-cn/](https://www.antdv.com/docs/vue/introduce-cn/) |
+
 
 ## 本地运行
 
