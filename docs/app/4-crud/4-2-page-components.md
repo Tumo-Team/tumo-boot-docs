@@ -4,7 +4,7 @@
 
 首先，需要调整之前创建的`test`页面文件结构，并修改Router配置如下：
 
-![image-20210322133029118](http://cdn.tycoding.cn/20210322133029.png)
+![image-20210322133029118](http://tycoding.cn/imgs/20210322133029.png)
 
 Tips：其中`redirect`可以指定重定向地址，这样对于单层节点`path`可以设为`/`
 
@@ -16,13 +16,13 @@ Tips：其中`redirect`可以指定重定向地址，这样对于单层节点`pa
 
 如下，在`./components/`目录下创建`EditForm`组件：
 
-![image-20210322133718338](http://cdn.tycoding.cn/20210322133718.png)
+![image-20210322133718338](http://tycoding.cn/imgs/20210322133718.png)
 
 如上，相信用过Vue的同学应该很容易理解上述代码。
 
 那么，我们再看`/test`页面：
 
-![image-20210322133740930](http://cdn.tycoding.cn/20210322133740.png)
+![image-20210322133740930](http://tycoding.cn/imgs/20210322133740.png)
 
 如上，`EditForm`组件已经成功引入。
 
@@ -32,7 +32,7 @@ Tips：其中`redirect`可以指定重定向地址，这样对于单层节点`pa
 
 ### 父组件调用子组件
 
-![image-20210322134619227](http://cdn.tycoding.cn/20210322134619.png)
+![image-20210322134619227](http://tycoding.cn/imgs/20210322134619.png)
 
 如上：
 
@@ -41,13 +41,13 @@ Tips：其中`redirect`可以指定重定向地址，这样对于单层节点`pa
 
 如上，`$refs`这种方式可避免使用`watch()`监听父组件的调用，并且`visible`只需由子组件维护即可。
 
-![image-20210322140305939](http://cdn.tycoding.cn/20210322140306.png)
+![image-20210322140305939](http://tycoding.cn/imgs/20210322140306.png)
 
 ### 子组件通知父组件
 
 在实际场景中，如果子组件新增/修改数据完毕后，需要通知父组件刷新Table，下面将演示这个功能。
 
-![image-20210322140558552](http://cdn.tycoding.cn/20210322140558.png)
+![image-20210322140558552](http://tycoding.cn/imgs/20210322140558.png)
 
 如上：
 
@@ -56,17 +56,17 @@ Tips：其中`redirect`可以指定重定向地址，这样对于单层节点`pa
 
 再看页面效果：
 
-![image-20210322140620285](http://cdn.tycoding.cn/20210322140620.png)
+![image-20210322140620285](http://tycoding.cn/imgs/20210322140620.png)
 
 ## 新增or编辑
 
 之前提到过，我一般会将新增和编辑弹窗公用，因此需要区别当前触发的新增操作还是编辑操作，这里提供一个很简单的方式：
 
-![image-20210322141048193](http://cdn.tycoding.cn/20210322141048.png)
+![image-20210322141048193](http://tycoding.cn/imgs/20210322141048.png)
 
 如上，在子组件`init`方法参数列表增加一个`id`，并判断传入的值即可，看下面效果：
 
-![image-20210322141204519](http://cdn.tycoding.cn/20210322141204.png)
+![image-20210322141204519](http://tycoding.cn/imgs/20210322141204.png)
 
 
 

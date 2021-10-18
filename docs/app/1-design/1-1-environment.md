@@ -6,7 +6,7 @@
 | npm      | 6.14.4   |                                                              |
 | @vue/cli | 4.4.4    | [https://cli.vuejs.org/zh/guide/installation.html](https://cli.vuejs.org/zh/guide/installation.html) |
 
-![image-20210204144441860](http://cdn.tycoding.cn/20210204144441.png)
+![image-20210204144441860](http://tycoding.cn/imgs/20210204144441.png)
 
 其次，我们还需要安装Git客户端，官方地址：[https://git-scm.com/](https://git-scm.com/)
 
@@ -22,17 +22,17 @@
 
 最简单的方式，我们可以利用`vue-cli`提供的快速创建的vue项目的方式来检验本地前端环境有无问题：
 
-![截屏2021-02-04 下午2.57.49](http://cdn.tycoding.cn/20210204145753.png)
+![截屏2021-02-04 下午2.57.49](http://tycoding.cn/imgs/20210204145753.png)
 
 启动项目：
 
-![截屏2021-02-04 下午2.59.37](http://cdn.tycoding.cn/20210204145939.png)
+![截屏2021-02-04 下午2.59.37](http://tycoding.cn/imgs/20210204145939.png)
 
-![截屏2021-02-04 下午3.00.24](http://cdn.tycoding.cn/20210204150026.png)
+![截屏2021-02-04 下午3.00.24](http://tycoding.cn/imgs/20210204150026.png)
 
 访问：http://localhost:8081
 
-![截屏2021-02-04 下午3.00.56](http://cdn.tycoding.cn/20210204150101.png)
+![截屏2021-02-04 下午3.00.56](http://tycoding.cn/imgs/20210204150101.png)
 
 项目启动成功，前端环境也没有问题了。
 

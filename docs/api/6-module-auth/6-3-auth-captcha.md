@@ -16,7 +16,7 @@
 
 看官方示例：
 
-![image-20210126123816142](http://cdn.tycoding.cn/20210126123821.png)
+![image-20210126123816142](http://tycoding.cn/imgs/20210126123821.png)
 
 于是，简单开发一个接口：
 
@@ -34,7 +34,7 @@
 
 浏览器访问：
 
-![截屏2021-01-26 下午12.46.07](http://cdn.tycoding.cn/20210126124612.png)
+![截屏2021-01-26 下午12.46.07](http://tycoding.cn/imgs/20210126124612.png)
 
 可以看到，调用`captcha.write(outputStream)`实际上是图片的流对象，那么对于这种情况，前端Vue该如何展示对应的图片呢？
 
@@ -68,7 +68,7 @@ handleCaptcha() {
 <img :src="captchaUrl" @click="handleCaptcha">
 ```
 
-![image-20210126134851865](http://cdn.tycoding.cn/20210126134851.png)
+![image-20210126134851865](http://tycoding.cn/imgs/20210126134851.png)
 
 并且实现了，点击验证码刷新图片。
 
@@ -86,7 +86,7 @@ tips：如果你定义了axios的全局response拦截器，如果拦截了此请
 
 举个栗子：
 
-![image-20210126141309169](http://cdn.tycoding.cn/20210126141309.png)
+![image-20210126141309169](http://tycoding.cn/imgs/20210126141309.png)
 
 如果使用Redis存储验证码信息，每次点击都将生成新的验证码并缓存到Redis中，而Captcha1和Captcha2肯定不能是相同的Key（虽然过期此数据会自动删除），那么利用上述方式似乎我们永远不知道前端发送来的验证码信息应该对应Redis中的哪个数据。
 
@@ -115,7 +115,7 @@ tips：上述代码中`Dict`是Hutool基于Map封装的对象，优点是无需`
 
 访问接口，可以看到接口返回的`image`是图片的Base64字符串。
 
-![截屏2021-01-26 下午2.24.39](http://cdn.tycoding.cn/20210126142446.png)
+![截屏2021-01-26 下午2.24.39](http://tycoding.cn/imgs/20210126142446.png)
 
 2. 修改axios请求接口：
 
@@ -171,19 +171,19 @@ tips： 上述存储`key`和`value`的数据，并指定5分钟失效。
 
 按照`spring-data-redis`提供的Template类，我们可以轻松的向Redis中存取数据，但启动项目：
 
-![image-20210126144310118](http://cdn.tycoding.cn/20210126144310.png)
+![image-20210126144310118](http://tycoding.cn/imgs/20210126144310.png)
 
 因为上述直接使用`@RequiredArgsConstructor`构造方法注入Bean；而如果直接使用`@Autowire`注入Bean：
 
-![image-20210126145223045](http://cdn.tycoding.cn/20210126145223.png)
+![image-20210126145223045](http://tycoding.cn/imgs/20210126145223.png)
 
 可以看到IDEA会直接报错无法注入。而如果使用`@Resource`是可以注入Bean的：
 
-![image-20210126145737103](http://cdn.tycoding.cn/20210126145737.png)
+![image-20210126145737103](http://tycoding.cn/imgs/20210126145737.png)
 
 主要区别是：`@RequiredArgsConstructor`和`@Autowire`都是按照类型注入Bean，而`@Resource`是按照名称注入Bean。当我们定义了`RedisTemplate<String, Object>`泛型，会报错没有这个类型Bean，当然如果不指定泛型也可以解决：
 
-![image-20210126150016692](http://cdn.tycoding.cn/20210126150017.png)
+![image-20210126150016692](http://tycoding.cn/imgs/20210126150017.png)
 
 或者，我们可以手动注入Bean，不使用注解注入，也是可以的，如下我们单独创建一个组件`RedisComponent.java`：
 
@@ -227,7 +227,7 @@ public class TumoTokenEndpoint {
 
 请求接口，使用Redis可视化客户端查看存入的验证码：
 
-![image-20210126150859938](http://cdn.tycoding.cn/20210126150900.png)
+![image-20210126150859938](http://tycoding.cn/imgs/20210126150900.png)
 
 
 
@@ -283,7 +283,7 @@ public class CaptchaFilter extends OncePerRequestFilter {
 
 **将Filter置于授权认证过滤器前面**
 
-![image-20210126161038777](http://cdn.tycoding.cn/20210126161038.png)
+![image-20210126161038777](http://tycoding.cn/imgs/20210126161038.png)
 
 ### 前端
 
@@ -323,11 +323,11 @@ export function login(username, password, captcha, captcha_key) {
 
 前端点击登录：
 
-![image-20210126162539170](http://cdn.tycoding.cn/20210126162539.png)
+![image-20210126162539170](http://tycoding.cn/imgs/20210126162539.png)
 
 后端在`CaptchaFilter`中断点：
 
-![image-20210126162708291](http://cdn.tycoding.cn/20210126162708.png)
+![image-20210126162708291](http://tycoding.cn/imgs/20210126162708.png)
 
 ## End
 

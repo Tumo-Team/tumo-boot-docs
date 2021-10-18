@@ -46,7 +46,7 @@ store
 
 ### 项目结构
 
-![image-20210318092803743](http://cdn.tycoding.cn/20210318092803.png)
+![image-20210318092803743](http://tycoding.cn/imgs/20210318092803.png)
 
 1. 首先进入登录页面 `login/index.vue`
 2. 当点击登录按钮触发事件，调用Store（`store/modules/user.js`）中指定Action，变更Store状态
@@ -54,7 +54,7 @@ store
 
 ### 代码结构
 
-![image-20210318094744064](http://cdn.tycoding.cn/20210318094744.png)
+![image-20210318094744064](http://tycoding.cn/imgs/20210318094744.png)
 
 从上图可以看到 **红线** 标记的是**调用**部分，紫线标记的是**响应**部分。
 
@@ -68,7 +68,7 @@ store
 
 `vue-devtools`是Vue官方出的浏览器插件，这个插件可以清晰的看到Vue页面组件、Vuex、Router等信息。
 
-![image-20210318134121079](http://cdn.tycoding.cn/20210318134126.png)
+![image-20210318134121079](http://tycoding.cn/imgs/20210318134126.png)
 
 
 

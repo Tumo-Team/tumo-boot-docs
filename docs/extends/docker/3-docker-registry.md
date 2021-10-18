@@ -9,7 +9,7 @@
 
 首先在本地构建Docker镜像（存在本地Docker仓库中），然后上传到远程Docker仓库。
 
-![image-20210207154302048](http://cdn.tycoding.cn/20210207154302.png)
+![image-20210207154302048](http://tycoding.cn/imgs/20210207154302.png)
 
 从上图可以看到，其实有两种方式能够实现Docker镜像的传输：
 
@@ -28,27 +28,27 @@
 
 在默认实例中可以修改 **访问凭证**中增加Docker仓库的访问密码：
 
-![image-20210207160436090](http://cdn.tycoding.cn/20210207160436.png)
+![image-20210207160436090](http://tycoding.cn/imgs/20210207160436.png)
 
 ### 镜像仓库
 
 下面需要创建命名空间和镜像仓库，之后的`pull`和`push`操作都将依赖于此仓库：
 
-![image-20210216162821851](http://cdn.tycoding.cn/20210216162821.png)
+![image-20210216162821851](http://tycoding.cn/imgs/20210216162821.png)
 
 点击仓库，可以看到官方给出了详细的操作文档：
 
-![image-20210216163022741](http://cdn.tycoding.cn/20210216163022.png)
+![image-20210216163022741](http://tycoding.cn/imgs/20210216163022.png)
 
 ## Push
 
 在之前我们使用`docker-compose`构建了`test-nginx`镜像，下面将演示如何将此镜像推送到个人阿里云镜像仓库中：
 
-![image-20210216163739660](http://cdn.tycoding.cn/20210216163739.png)
+![image-20210216163739660](http://tycoding.cn/imgs/20210216163739.png)
 
 在阿里云容器服务官网查看刚才push的镜像：
 
-![image-20210216163918771](http://cdn.tycoding.cn/20210216163918.png)
+![image-20210216163918771](http://tycoding.cn/imgs/20210216163918.png)
 
 ## Pull
 

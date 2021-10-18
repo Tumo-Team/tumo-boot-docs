@@ -28,15 +28,15 @@
 
 
 
-![image-20210808185742204](http://cdn.tycoding.cn/20210808185742.png)
+![image-20210808185742204](http://tycoding.cn/imgs/20210808185742.png)
 
 ## 运行文档
 
 使用`yarn dev`或使用`npm run dev`命令运行项目。
 
-![image-20210808190106881](http://cdn.tycoding.cn/20210808190106.png)
+![image-20210808190106881](http://tycoding.cn/imgs/20210808190106.png)
 
 使用浏览器访问：[http://localhost:3000/](http://localhost:3000/)
 
-![image-20210808190156363](http://cdn.tycoding.cn/20210808190156.png)
+![image-20210808190156363](http://tycoding.cn/imgs/20210808190156.png)
 

@@ -6,7 +6,7 @@
 
 开始之前，我需要先介绍一下`vue-element-admin`这个项目：
 
-![截屏2021-02-03 下午3.33.44](http://cdn.tycoding.cn/20210203153350.png)
+![截屏2021-02-03 下午3.33.44](http://tycoding.cn/imgs/20210203153350.png)
 
 此项目的作者也提供的有开发文档：[https://panjiachen.gitee.io/vue-element-admin-site/zh/](https://panjiachen.gitee.io/vue-element-admin-site/zh/) ，建议大家先阅读作者的文档。熟悉这个项目之后你会发现很多开源的项目都是这种设计（如：对axios的封装、对router的封装、对全局页面layout的布局封装），学习这一个前端项目就很轻松理解其他类似的Vue前端项目。
 
@@ -14,7 +14,7 @@
 
 这个项目想必很多小伙伴都有直接或间接使用过，类似的项目（前端、后端）很多，但其实作者提供的这种目录结构被很多的项目所沿用。我也觉得非常的标准，我们可以先了解一下这个前端项目目录结构的设计：
 
-![image-20210203153716396](http://cdn.tycoding.cn/20210203153716.png)
+![image-20210203153716396](http://tycoding.cn/imgs/20210203153716.png)
 
 后面将介绍如何对于本项目，如何融合这种设计，尽可能减少学习成本。
 
@@ -30,7 +30,7 @@
 
 有的，项目地址：[https://github.com/vueComponent/ant-design-vue-pro](https://github.com/vueComponent/ant-design-vue-pro)
 
-![截屏2021-02-03 下午3.42.12](http://cdn.tycoding.cn/20210203154218.png)
+![截屏2021-02-03 下午3.42.12](http://tycoding.cn/imgs/20210203154218.png)
 
 感兴趣的小伙伴可以去学习下这个项目。
 
@@ -44,7 +44,7 @@
 
 项目地址：[https://github.com/Tumo-Team/Tumo-AntV](https://github.com/Tumo-Team/Tumo-AntV)
 
-![截屏2021-02-03 下午4.13.00](http://cdn.tycoding.cn/20210203161305.png)
+![截屏2021-02-03 下午4.13.00](http://tycoding.cn/imgs/20210203161305.png)
 
 ## Use
 
@@ -66,11 +66,11 @@ npm install
 npm run dev
 ```
 
-![截屏2021-02-03 下午5.00.07](http://cdn.tycoding.cn/20210203170016.png)
+![截屏2021-02-03 下午5.00.07](http://tycoding.cn/imgs/20210203170016.png)
 
 打开浏览器访问：http://localhost:9527
 
-![截屏2021-02-03 下午5.11.41](http://cdn.tycoding.cn/20210203171147.png)
+![截屏2021-02-03 下午5.11.41](http://tycoding.cn/imgs/20210203171147.png)
 
 到此为止，项目启动成功。
 
@@ -84,19 +84,19 @@ npm run dev
 
 > 1. 删除`Tumo-AntV/mock`文件夹
 
-![image-20210203174828433](http://cdn.tycoding.cn/20210203174828.png)
+![image-20210203174828433](http://tycoding.cn/imgs/20210203174828.png)
 
 > 2. 删除`Tumo-AntV/src/main.js`中19-30行代码
 
-![image-20210203174953482](http://cdn.tycoding.cn/20210203174953.png)
+![image-20210203174953482](http://tycoding.cn/imgs/20210203174953.png)
 
 > 3. 删除`Tumo-AntV/vue.config.js`中第39行代码
 
-![image-20210203175336411](http://cdn.tycoding.cn/20210203175336.png)
+![image-20210203175336411](http://tycoding.cn/imgs/20210203175336.png)
 
 > 4. 删除`Tumo-AntV/package.json`中第67行代码
 
-![image-20210203175512159](http://cdn.tycoding.cn/20210203175512.png)
+![image-20210203175512159](http://tycoding.cn/imgs/20210203175512.png)
 
 然后重新install项目即可。
 

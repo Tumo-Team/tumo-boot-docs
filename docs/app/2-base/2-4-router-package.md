@@ -6,7 +6,7 @@ vue-router官方文档：[https://router.vuejs.org/zh/installation.html](https:/
 
 在本项目中，路由的配置请查看 `src/router` 模块。
 
-![image-20210318135032108](http://cdn.tycoding.cn/20210318135032.png)
+![image-20210318135032108](http://tycoding.cn/imgs/20210318135032.png)
 
 在这个页面，主要用来初始化路由对象，并且定义一些默认路由，比如登录页面的路由。
 
@@ -18,7 +18,7 @@ vue-router官方文档：[https://router.vuejs.org/zh/installation.html](https:/
 
 本项目中，路由拦截部分请查看：`src/permission.js`
 
-![image-20210318135402415](http://cdn.tycoding.cn/20210318135402.png)
+![image-20210318135402415](http://tycoding.cn/imgs/20210318135402.png)
 
 可以看到，项目中所有的路由跳转最终都需要先经过这个配置，在这个配置中，首先要获取Token，然后判断Token是否存在，如果不存在就跳转到登录页面，如果存在就正常跳转。
 
@@ -30,7 +30,7 @@ vue-router官方文档：[https://router.vuejs.org/zh/installation.html](https:/
 
 在本项目中，没有实现动态路由配置（请求后端渲染路由配置）。但是本项目也提供了一个很方便的入口配置：`src/store/modules/permission.js` 。
 
-![image-20210318140312979](http://cdn.tycoding.cn/20210318140313.png)
+![image-20210318140312979](http://tycoding.cn/imgs/20210318140313.png)
 
 在 `filterAsyncRoutes` 方法中，可以通过请求后端结果拿到路由JSON，最后赋值到Store中即可。
 

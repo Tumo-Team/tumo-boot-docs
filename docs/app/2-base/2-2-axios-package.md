@@ -108,7 +108,7 @@ axios.interceptors.response.use(function (response) {
 
 参看：`src/utils/request.js`：
 
-![image-20210314173925241](http://cdn.tycoding.cn/20210314173925.png)
+![image-20210314173925241](http://tycoding.cn/imgs/20210314173925.png)
 
 ## api
 
@@ -116,7 +116,7 @@ axios.interceptors.response.use(function (response) {
 
 在本项目中，这些代码定义在 `src/api/` 目录。参看：`src/api/user.js`：
 
-![image-20210314174423096](http://cdn.tycoding.cn/20210314174423.png)
+![image-20210314174423096](http://tycoding.cn/imgs/20210314174423.png)
 
 可以看到：
 
@@ -135,7 +135,7 @@ axios.interceptors.response.use(function (response) {
 
 参看：`src/store/modules/user.js` （登录方法为何在这里调用，后面文章再具体介绍）
 
-![image-20210314180848046](http://cdn.tycoding.cn/20210314180848.png)
+![image-20210314180848046](http://tycoding.cn/imgs/20210314180848.png)
 
 那么：
 
@@ -148,7 +148,7 @@ axios.interceptors.response.use(function (response) {
 
 下面我们仅以登录接口为例，先简单表示此项目封装的`axios`如何使用以及执行流程。
 
-![image-20210317150320211](http://cdn.tycoding.cn/20210317150320.png)
+![image-20210317150320211](http://tycoding.cn/imgs/20210317150320.png)
 
 Tips：其中`store`部分在后期`Vuex`部分讲解，对于Login登录请求、getUserInfo获取用户信息请求、Logout注销请求等需要经过store，大多业务请求无需，本章中不讨论这部分。
 

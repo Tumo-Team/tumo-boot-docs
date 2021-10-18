@@ -15,11 +15,11 @@ docker --version
 docker-compose --version
 ```
 
-![image-20210214195117730](http://cdn.tycoding.cn/20210214195117.png)
+![image-20210214195117730](http://tycoding.cn/imgs/20210214195117.png)
 
 无论是Mac系统还是Windows系统，都提供了可视化的管理工具，例如Mac系统：
 
-![截屏2021-02-14 下午7.52.45](http://cdn.tycoding.cn/20210214195249.png)
+![截屏2021-02-14 下午7.52.45](http://tycoding.cn/imgs/20210214195249.png)
 
 ## 安装Docker （Ubuntu）
 
@@ -84,4 +84,4 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
 验证安装是否成功：
 
-![image-20210214195458146](http://cdn.tycoding.cn/20210214195458.png)
+![image-20210214195458146](http://tycoding.cn/imgs/20210214195458.png)

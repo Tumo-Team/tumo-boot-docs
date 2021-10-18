@@ -16,7 +16,7 @@
 
 比如，创建`src/views/test.vue`，这是一个测试页面：
 
-![image-20210320104044801](http://cdn.tycoding.cn/20210320104044.png)
+![image-20210320104044801](http://tycoding.cn/imgs/20210320104044.png)
 
 ## Router
 
@@ -26,11 +26,11 @@
 
 编辑`src/router/index.js`：
 
-![image-20210320104736844](http://cdn.tycoding.cn/20210320104736.png)
+![image-20210320104736844](http://tycoding.cn/imgs/20210320104736.png)
 
 查看刷新后的页面左侧菜单：
 
-![image-20210320104840084](http://cdn.tycoding.cn/20210320104840.png)
+![image-20210320104840084](http://tycoding.cn/imgs/20210320104840.png)
 
 如上，这个菜单因为直接定义在router中，因此不受权限控制，无论什么账户登录都会显示此菜单，这也是为什么我们为什么要后端控制菜单权限。
 

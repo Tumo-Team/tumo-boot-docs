@@ -19,25 +19,25 @@
 
 具体在 `src/main.js` 中使用：
 
-![image-20210310135101669](http://cdn.tycoding.cn/20210310135101.png)
+![image-20210310135101669](http://tycoding.cn/imgs/20210310135101.png)
 
 ## 登录页面
 
 参看：`src/views/login/index.vue`
 
-![image-20210313141653100](http://cdn.tycoding.cn/20210313141653.png)
+![image-20210313141653100](http://tycoding.cn/imgs/20210313141653.png)
 
 ## Navbar顶部栏
 
 参看：`src/layout/components/Navbar.vue`
 
-![image-20210313141518529](http://cdn.tycoding.cn/20210313141523.png)
+![image-20210313141518529](http://tycoding.cn/imgs/20210313141523.png)
 
 ## Sidebar侧边栏
 
 参看：`src/layout/components/Sidebar/`
 
-![image-20210313141604017](http://cdn.tycoding.cn/20210313141604.png)
+![image-20210313141604017](http://tycoding.cn/imgs/20210313141604.png)
 
 **其中：**
 
@@ -49,7 +49,7 @@
 
 参看：`src/layout/Settings/index.vue`
 
-![image-20210313141632440](http://cdn.tycoding.cn/20210313141632.png)
+![image-20210313141632440](http://tycoding.cn/imgs/20210313141632.png)
 
 ## 其他页面
 

@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="http://cdn.tycoding.cn/MIK-WxRzP9.png" />
+    <img src="http://tycoding.cn/imgs/MIK-WxRzP9.png" />
 </p>
 <p align="center">
     <a href="https://github.com/Tumo-Team" target="_blank">

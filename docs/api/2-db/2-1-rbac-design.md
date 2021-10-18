@@ -11,7 +11,7 @@
 1. 用户 --> 角色（多对多）
 2. 角色 --> 权限（多对多）
 
-![image-20210613080109979](http://cdn.tycoding.cn/20210613080115.png)
+![image-20210613080109979](http://tycoding.cn/imgs/20210613080115.png)
 
 ## User用户表
 
@@ -129,7 +129,7 @@ CREATE TABLE `sys_user_role` (
 
 我们直接从页面出发，看一个CRUD页面可能涉及的权限：
 
-![image-20210613203749040](http://cdn.tycoding.cn/20210613203749.png)
+![image-20210613203749040](http://tycoding.cn/imgs/20210613203749.png)
 
 如上，对于一般的后台页面，除了CRUD的操作权限，还需要左侧菜单列表的访问权限。
 

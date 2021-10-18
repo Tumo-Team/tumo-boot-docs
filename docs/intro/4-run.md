@@ -12,11 +12,11 @@
 
 > 后端
 
-![image-20210808201834134](http://cdn.tycoding.cn/20210808201834.png)
+![image-20210808201834134](http://tycoding.cn/imgs/20210808201834.png)
 
 > 前端
 
-![image-20210808201709796](http://cdn.tycoding.cn/20210808201709.png)
+![image-20210808201709796](http://tycoding.cn/imgs/20210808201709.png)
 
 
 
@@ -32,7 +32,7 @@ git clone https://github.com/Tumo-Team/tumo-boot.git
 
 使用IDEA打开项目，等待Maven加载结束后，左上方会提示`TumoBootApp`：
 
-![image-20210809124155457](http://cdn.tycoding.cn/20210809124155.png)
+![image-20210809124155457](http://tycoding.cn/imgs/20210809124155.png)
 
 如果Maven加载失败（即右侧Maven面板中有错误），需多刷新几次Maven依赖即可（网络差或没使用国内镜像源）。
 
@@ -61,11 +61,11 @@ git clone https://github.com/Tumo-Team/tumo-boot.git
 
 Maven正常加载后，就可以直接启动项目了，显示如下日志证明启动成功：
 
-![image-20210809130145419](http://cdn.tycoding.cn/20210809130145.png)
+![image-20210809130145419](http://tycoding.cn/imgs/20210809130145.png)
 
 如日志所示，我们可以访问：`localhost:8090/doc.html` 查看Swagger接口文档：
 
-![image-20210809130309593](http://cdn.tycoding.cn/20210809130309.png)
+![image-20210809130309593](http://tycoding.cn/imgs/20210809130309.png)
 
 
 
@@ -87,25 +87,25 @@ git clone https://github.com/Tumo-Team/tumo-boot-ui.git
 yarn install
 ```
 
-![image-20210809131311963](http://cdn.tycoding.cn/20210809131312.png)
+![image-20210809131311963](http://tycoding.cn/imgs/20210809131312.png)
 
 等待安装完毕后，使用IDEA打开此项目：
 
-![image-20210809131601568](http://cdn.tycoding.cn/20210809131601.png)
+![image-20210809131601568](http://tycoding.cn/imgs/20210809131601.png)
 
 启动如上脚本即可：
 
-![image-20210809131647355](http://cdn.tycoding.cn/20210809131647.png)
+![image-20210809131647355](http://tycoding.cn/imgs/20210809131647.png)
 
 
 
 浏览器访问：[http://localhost:3100/](http://localhost:3100/)
 
-![image-20210809131751070](http://cdn.tycoding.cn/20210809131751.png)
+![image-20210809131751070](http://tycoding.cn/imgs/20210809131751.png)
 
 输入验证码并登录：
 
-![image-20210809131946964](http://cdn.tycoding.cn/20210809131947.png)
+![image-20210809131946964](http://tycoding.cn/imgs/20210809131947.png)
 
 如上，整个项目启动完成。
 

@@ -15,7 +15,7 @@
 1. 首先修改文件夹名称
 2. 然后修改项目根目录`package.json`中第二行`name`属性，修改后**最好**先删除`node_modules`并重新执行`npm install`
 
-![image-20210310114516437](http://cdn.tycoding.cn/20210310114522.png)
+![image-20210310114516437](http://tycoding.cn/imgs/20210310114522.png)
 
 **Tips：**
 
@@ -39,17 +39,17 @@ npm run build
 
 同理，我们也可以自定义脚本命令，例如很多的项目中使用`npm run serve`启动项目，那么可以修改为：
 
-![image-20210310131350532](http://cdn.tycoding.cn/20210310133631.png)
+![image-20210310131350532](http://tycoding.cn/imgs/20210310133631.png)
 
 ### 加载页
 
 细心的你可能发现无论是本项目还是其他很多vue前端项目，在每次刷新页面时（无论刷新哪个页面），都会全屏显示同一个加载页面：
 
-![image-20210310132701154](http://cdn.tycoding.cn/20210310133634.png)
+![image-20210310132701154](http://tycoding.cn/imgs/20210310133634.png)
 
 这是因为一般情况下，Vue前端项目都是单页面，每个页面都是Vue组件，最后经过编译后再将Vue组件页面嵌入到HTML中，那么其实整个项目只有一个HTML入口页面：`public/index.html`
 
-![image-20210310132625152](http://cdn.tycoding.cn/20210310133626.png)
+![image-20210310132625152](http://tycoding.cn/imgs/20210310133626.png)
 
 如果你想要定制化加载页的内容，可以修改上述`index.html`即可；当然需要定制化网站图标等信息也是修改上述HTML。
 
@@ -59,11 +59,11 @@ npm run build
 
 ### 网站Title
 
-![image-20210310133423647](http://cdn.tycoding.cn/20210310133621.png)
+![image-20210310133423647](http://tycoding.cn/imgs/20210310133621.png)
 
 这里的Title指上图信息，对于这里的设置，项目中全局封装了一个JS：`src/settings.js`
 
-![image-20210310133554870](http://cdn.tycoding.cn/20210310133554.png)
+![image-20210310133554870](http://tycoding.cn/imgs/20210310133554.png)
 
 # 联系
 

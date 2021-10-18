@@ -81,7 +81,7 @@ Tips：如上，我们仅仅定义了项目使用的Redis服务，而项目启�
 
 最后看一下项目目录结构：
 
-![image-20210207140336593](http://cdn.tycoding.cn/20210207140336.png)
+![image-20210207140336593](http://tycoding.cn/imgs/20210207140336.png)
 
 ### 打包项目
 
@@ -93,7 +93,7 @@ mvn clean install -Dmaven.test.skip=true
 
 之后会在项目根目录生成`target`目录，可以看到生成的`tumo-boot.jar`（此名称是通过`pom.xml`中的`<build><finalName>`配置的）：
 
-![image-20210207140758215](http://cdn.tycoding.cn/20210207140758.png)
+![image-20210207140758215](http://tycoding.cn/imgs/20210207140758.png)
 
 ### 构建镜像
 
@@ -103,11 +103,11 @@ mvn clean install -Dmaven.test.skip=true
 docker-compose build
 ```
 
-![image-20210214191144950](http://cdn.tycoding.cn/20210214191150.png)
+![image-20210214191144950](http://tycoding.cn/imgs/20210214191150.png)
 
 最后通过Docker Desktop客户端或者命令查看构建的容器：
 
-![image-20210214191320529](http://cdn.tycoding.cn/20210214191320.png)
+![image-20210214191320529](http://tycoding.cn/imgs/20210214191320.png)
 
 ## 构建前端镜像
 
@@ -173,7 +173,7 @@ services:
 
 熟悉Node朋友应该知道使用`npm run build`打包前端项目，这个命令脚本其实依赖于项目根目录下`package.json`中的定义：
 
-![image-20210207143423101](http://cdn.tycoding.cn/20210207143423.png)
+![image-20210207143423101](http://tycoding.cn/imgs/20210207143423.png)
 
 运行此命令将在根目录下生成`dist`文件夹。
 
@@ -185,7 +185,7 @@ services:
 npm run build:docker
 ```
 
-![image-20210216170030072](http://cdn.tycoding.cn/20210216170030.png)
+![image-20210216170030072](http://tycoding.cn/imgs/20210216170030.png)
 
 ### 构建镜像
 
@@ -201,7 +201,7 @@ cd docker/
 docker-compose build
 ```
 
-![image-20210216171056645](http://cdn.tycoding.cn/20210216171056.png)
+![image-20210216171056645](http://tycoding.cn/imgs/20210216171056.png)
 
 ## Run
 
@@ -218,13 +218,13 @@ docker-compose build
 
 在之前文章中我们讲解过如何使用阿里云镜像仓库，这里不再讲解。我们单独创建两个仓库存放前后端项目镜像：
 
-![image-20210216174444201](http://cdn.tycoding.cn/20210216174444.png)
+![image-20210216174444201](http://tycoding.cn/imgs/20210216174444.png)
 
 ## Push
 
 下面将镜像上传到上述两个仓库中，不再详细说明：
 
-![image-20210216175153298](http://cdn.tycoding.cn/20210216175153.png)
+![image-20210216175153298](http://tycoding.cn/imgs/20210216175153.png)
 
 ## Pull
 
