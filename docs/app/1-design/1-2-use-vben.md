@@ -1,145 +1,74 @@
-# 如何使用Tumo-AntV项目
+# Vben-admin
 
-[https://github.com/Tumo-Team/Tumo-AntV](https://github.com/Tumo-Team/Tumo-AntV) 项目是基于Ant Design Vue && Vue2.x 。想必深入学习过ElementUI或AntDesignVue的朋友能够很轻松入手此项目，当然本系列文章会从后端开发者的角度教大家如何开发和使用本项目。
+在之前的文章中，我们介绍过了，本项目前端是基于`vben-admin`开发的，所以在开始之前我们必须要熟悉`vben-admin`这个项目。
 
-## Vue-ElementUI-Admin
+## Vben是什么？
 
-开始之前，我需要先介绍一下`vue-element-admin`这个项目：
+`vben-admin`是一个开源的中后台管理系统，基于前端最新的技术栈：vue3、typescript、vite、ant-design-vue3.x开发。
 
-![截屏2021-02-03 下午3.33.44](http://tycoding.cn/imgs/20210203153350.png)
+- 开源地址：[https://github.com/vbenjs/vue-vben-admin](https://github.com/vbenjs/vue-vben-admin)
+- 预览地址：[https://vvbin.cn/next/](https://vvbin.cn/next/#/)
+- 文档地址：[https://vvbin.cn/doc-next/](https://vvbin.cn/doc-next/)
 
-此项目的作者也提供的有开发文档：[https://panjiachen.gitee.io/vue-element-admin-site/zh/](https://panjiachen.gitee.io/vue-element-admin-site/zh/) ，建议大家先阅读作者的文档。熟悉这个项目之后你会发现很多开源的项目都是这种设计（如：对axios的封装、对router的封装、对全局页面layout的布局封装），学习这一个前端项目就很轻松理解其他类似的Vue前端项目。
+> 为什么要用vben？
 
-**目录结构**
+如果在Vue2阶段，相信你应该非常熟悉`vue-element-admin`这个前端开源项目，在很多个人、公司的前端项目中都能看到此项目的身影。
 
-这个项目想必很多小伙伴都有直接或间接使用过，类似的项目（前端、后端）很多，但其实作者提供的这种目录结构被很多的项目所沿用。我也觉得非常的标准，我们可以先了解一下这个前端项目目录结构的设计：
+而随着Vue3的到来，elementUI并没有及时更新上来，而且相对ant-design-vue，后者的UI组件要更加丰富，对于我们后端开发者来说，使用起来也能更大程度减少手写CSS。
 
-![image-20210203153716396](http://tycoding.cn/imgs/20210203153716.png)
+## 运行vben-admin
 
-后面将介绍如何对于本项目，如何融合这种设计，尽可能减少学习成本。
-
-## Ant Design Vue
-
-官方网站：[https://www.antdv.com/docs/vue/introduce-cn/](https://www.antdv.com/docs/vue/introduce-cn/)
-
-> 为什么不继续使用ElementUI了？
-
-相比ElementUI，AntdV提供了更加丰富的组件，对于我们后端人员简直福利（组价覆盖面广、不用过多手写CSS）。
-
-> 那AntDesignVue有没有类似的后台系统？
-
-有的，项目地址：[https://github.com/vueComponent/ant-design-vue-pro](https://github.com/vueComponent/ant-design-vue-pro)
-
-![截屏2021-02-03 下午3.42.12](http://tycoding.cn/imgs/20210203154218.png)
-
-感兴趣的小伙伴可以去学习下这个项目。
-
-但由于AntDesignVue和ElementUI的不同，此项目的一些设计个人感觉用起来不是很习惯（我太菜了~）。
-
-因此我在`vue-element-admin`的基础上，融合AntDesignVue（或许可以说是拼凑、CV的，太菜了~），改了一套Ant-Design-Vue-Pro项目。
-
-## Tumo-AntV
-
-此项目提供了一套最简洁的后台项目模板，按照Vue-Element-Admin的配置。
-
-项目地址：[https://github.com/Tumo-Team/Tumo-AntV](https://github.com/Tumo-Team/Tumo-AntV)
-
-![截屏2021-02-03 下午4.13.00](http://tycoding.cn/imgs/20210203161305.png)
-
-## Use
-
-下载项目：
-
+1. Get the project code
 ```shell
-git clone https://github.com/Tumo-Team/Tumo-AntV.git
+git clone https://github.com/anncwb/vue-vben-admin.git
 ```
 
-安装项目：
-
+2. Installation dependencies
 ```shell
-npm install
+cd vue-vben-admin
+pnpm install
 ```
 
-运行项目：
-
+3. run
 ```shell
-npm run dev
+pnpm serve
 ```
 
-![截屏2021-02-03 下午5.00.07](http://tycoding.cn/imgs/20210203170016.png)
-
-打开浏览器访问：http://localhost:9527
-
-![截屏2021-02-03 下午5.11.41](http://tycoding.cn/imgs/20210203171147.png)
-
-到此为止，项目启动成功。
-
-## 移除Mock
-
-你可能会奇怪，为什么我没有启动任何后端，这个项目还是可以登录进去？
-
-这是因为项目中引入了Mock.js，具体我不再介绍。简单来说，Mock.js可以模拟后端服务并提供请求接口给当前前端项目调用。
-
-那么在实际项目中，我们需要接入自己的用户权限体系，所以需要移除Mock.js，前端项目才可正常与后端交互。
-
-> 1. 删除`Tumo-AntV/mock`文件夹
-
-![image-20210203174828433](http://tycoding.cn/imgs/20210203174828.png)
-
-> 2. 删除`Tumo-AntV/src/main.js`中19-30行代码
-
-![image-20210203174953482](http://tycoding.cn/imgs/20210203174953.png)
-
-> 3. 删除`Tumo-AntV/vue.config.js`中第39行代码
-
-![image-20210203175336411](http://tycoding.cn/imgs/20210203175336.png)
-
-> 4. 删除`Tumo-AntV/package.json`中第67行代码
-
-![image-20210203175512159](http://tycoding.cn/imgs/20210203175512.png)
-
-然后重新install项目即可。
-
-到此为止，Mock.js已经完全移除了。
-
-**注意：** 一旦移除的MockServer，项目就无法登录了，必须再手动接入后端接口才可。
-
-## 目录结构
-
+4. build
+```shell
+pnpm build
 ```
-├── build				-- 项目构建目标目录
-├── mock 				-- Mock.js配置目录（后期需要移除）
-├── public				-- 不被路由拦截的资源目录
-├── src
-│   ├── App.vue
-│   ├── api				-- 后端接口配置目录
-│   ├── assets			-- 静态资源目录
-│   ├── components		-- 公共组件目录
-│   ├── directive		-- Vue指令封装
-│   ├── filters			-- 过滤器
-│   ├── icons			-- svg图标
-│   ├── layout			-- 布局组件
-│   ├── main.js
-│   ├── permission.js	-- vue-router全局封装
-│   ├── router			-- vue-router配置
-│   ├── settings.js		-- 全局配置
-│   ├── store			-- vuex配置
-│   ├── styles			-- 全局样式
-│   ├── utils
-│		├── auth.js		-- 获取Token工具
-│       ├── constants.js	-- 常量定义
-│       ├── index.js	-- 工具
-│       ├── open-window.js	-- 打开小窗口的工具
-│       ├── permission.js	-- 封装权限校验指令
-│       ├── request.js		-- axios全局配置
-│   └── views			-- 页面组件
-└── vue.config.js
-├── jest.config.js
-├── jsconfig.json
-├── LICENSE
-├── README.md
-├── babel.config.js
-```
+
+![](imgs/MIK-kEbCZB.png)
+
+浏览器访问 `localhost:3101`
+
+![](imgs/MIK-jJMNsD.png)
+
+
+## 如何二开
+
+> 项目难点
+
+1. **封装：**
+如果你看到vben的源码就应该知道，作者在该项目中在ant-design-vue的基础上封装了非常多的组件，例如常见的Table、Modal、Form等等组件都进行了封装。
+
+2. **设计思路：**
+虽然使用起来更方便了，但也提高了学习成本，如果你对前端Axios、Router、Store、Layout类似的项目设计和封装思路不熟悉的话，学习此项目可能难度比较大。
+
+3. **语法：**
+首先你要知道Vue3相对Vue2的区别都有什么，其次你要了解下TypeScript的语法结构。
+
+> 如何二次开发？
+
+虽然此项目封装了大量的自定义组件，且用了Vue3和TypeScript，但其实常用的功能无非就是CRUD，因此仅作为一个后端的使用者而非前端开发者来说，我们仅仅需要了解如下几个技术点即可：
+
+1. Axios如何封装的，如何针对具体业务修改Axios封装逻辑
+2. Router如何封装的，如何后端请求权限菜单，如何在前端定义路由菜单
+3. CRUD组件如何封装的，其实就是对于Table、Form、Modal的组件的运用
+
+在后面的文章中，笔者会依次介绍这些部分封装逻辑和如何进行修改。
+
 
 # 联系
 

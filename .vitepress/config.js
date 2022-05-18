@@ -180,12 +180,8 @@ function createSidebar() {
             link: '/docs/app/1-design/1-1-environment',
           },
           {
-            text: '如何使用Vben项目',
+            text: '如何使用Vben-Admin',
             link: '/docs/app/1-design/1-2-use-vben',
-          },
-          {
-            text: 'Tumo-Boot-UI项目搭建',
-            link: '/docs/app/1-design/1-3-init-tumo-boot-ui',
           },
         ],
       },

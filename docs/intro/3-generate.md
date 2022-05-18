@@ -16,6 +16,18 @@
 
 [EasyCode](https://gitee.com/makejava/EasyCode) 是一个基于IDEA的代码生成插件。开源地址：[https://gitee.com/makejava/EasyCode](https://gitee.com/makejava/EasyCode) 。下面介绍下如何使用这个插件生成代码。
 
+### 安装
+
+在idea -> settings -> plugins中搜索 `EasyCode` ，注意名称避免下载错了：
+
+![](imgs/MIK-fy9rIu.png)
+
+安装之后在Other Settings中可以看到EasyCode的配置，如下：
+
+![](imgs/MIK-Fl2LlW.png)
+
+可以看到，目前版本中已经支持将模板导出到本地，最终生成的是`.json`文件，本项目的模板文件在文章最后会介绍。
+
 ### 它能做什么？
 
 > 自定义数据库字段映射类型
@@ -60,33 +72,33 @@
 
 选择`Generate Code`：
 
-![image-20201010131634552](http://tycoding.cn/imgs/20201010131634.png)
+![](imgs/MIK-Cki5md.png)
 
 你可以根据需要修改：`package`、`path`等配置。
 
 更多的配置项，请看官方的文档。
 
-### 自定义一套模板
-
-**下面的模板示例都是基于本Tumo-Boot项目的，仅供参考，各位根据需求自定义**
-
-> 先定义一些全局变量，方便在`Templete Setting`中快速拿到
-
-![image-20201010132044016](http://tycoding.cn/imgs/20201010132044.png)
-
-
-
 ## Tumo-EasyCode
 
-鉴于EasyCode插件并没有提供上传模板文件的功能，笔者基于EasyCode插件二次封装了一下，移除了内置模板，内置提供`Tumo-Boot`和`Tumo-Cloud`项目的代码生成模板，无需大家手动复制模板代码了。
+上面介绍中，可以看到EasyCode新版本中已经支持模板的导入导出，因此笔者在这里直接提供本项目的`.json`模板文件：
 
-下载地址：[https://github.com/Tumo-Team/tumo-easycode/releases](https://github.com/Tumo-Team/tumo-easycode/releases)
+[https://github.com/Tumo-Team/tumo-boot/blob/main/generate/EasyCodeConfig.json](https://github.com/Tumo-Team/tumo-boot/blob/main/generate/EasyCodeConfig.json)
 
-下载jar文件后，使用如下方式安装插件即可：
+将此文件导入到EasyCode插件中：
 
-![image-20210808192334684](http://tycoding.cn/imgs/20210808192334.png)
+![](imgs/MIK-QulmHe.png)
 
-![image-20210808192406228](http://tycoding.cn/imgs/20210808192406.png)
+![](imgs/MIK-z3JrUZ.png)
 
+可以看到Template中已经有本项目的前后端模板配置了：
 
+![](imgs/MIK-v6YM4B.png)
+
+之后定义了表结构后再选择此模板生成代码即可：
+
+![](imgs/MIK-wIfQV2.png)
+
+然后结合项目进行自定义配置，最下方选择 `tumo-boot`模板即可：
+
+![](imgs/MIK-PNkoaE.png)
 
