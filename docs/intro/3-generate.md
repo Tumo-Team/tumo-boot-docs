@@ -20,11 +20,11 @@
 
 在idea -> settings -> plugins中搜索 `EasyCode` ，注意名称避免下载错了：
 
-![](imgs/MIK-fy9rIu.png)
+![](http://cdn.tycoding.cn/docs/MIK-fy9rIu.png)
 
 安装之后在Other Settings中可以看到EasyCode的配置，如下：
 
-![](imgs/MIK-Fl2LlW.png)
+![](http://cdn.tycoding.cn/docs/MIK-Fl2LlW.png)
 
 可以看到，目前版本中已经支持将模板导出到本地，最终生成的是`.json`文件，本项目的模板文件在文章最后会介绍。
 
@@ -72,7 +72,7 @@
 
 选择`Generate Code`：
 
-![](imgs/MIK-Cki5md.png)
+![](http://cdn.tycoding.cn/docs/MIK-Cki5md.png)
 
 你可以根据需要修改：`package`、`path`等配置。
 
@@ -86,19 +86,19 @@
 
 将此文件导入到EasyCode插件中：
 
-![](imgs/MIK-QulmHe.png)
+![](http://cdn.tycoding.cn/docs/MIK-QulmHe.png)
 
-![](imgs/MIK-z3JrUZ.png)
+![](http://cdn.tycoding.cn/docs/MIK-z3JrUZ.png)
 
 可以看到Template中已经有本项目的前后端模板配置了：
 
-![](imgs/MIK-v6YM4B.png)
+![](http://cdn.tycoding.cn/docs/MIK-v6YM4B.png)
 
 之后定义了表结构后再选择此模板生成代码即可：
 
-![](imgs/MIK-wIfQV2.png)
+![](http://cdn.tycoding.cn/docs/MIK-wIfQV2.png)
 
 然后结合项目进行自定义配置，最下方选择 `tumo-boot`模板即可：
 
-![](imgs/MIK-PNkoaE.png)
+![](http://cdn.tycoding.cn/docs/MIK-PNkoaE.png)
 

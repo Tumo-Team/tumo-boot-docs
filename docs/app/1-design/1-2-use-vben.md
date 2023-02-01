@@ -39,11 +39,11 @@ pnpm serve
 pnpm build
 ```
 
-![](imgs/MIK-kEbCZB.png)
+![](http://cdn.tycoding.cn/docs/MIK-kEbCZB.png)
 
 浏览器访问 `localhost:3101`
 
-![](imgs/MIK-jJMNsD.png)
+![](http://cdn.tycoding.cn/docs/MIK-jJMNsD.png)
 
 
 ## 如何二开
