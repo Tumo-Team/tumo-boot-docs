@@ -1,11 +1,12 @@
 # 代码生成
 
-详细大家学习了这么多项目，代码生成工具也一定见识了很多。但是今天我们并不介绍基于Web的代码生成功能或Mybatis Generate插件，因为这几种方式对于个人开发都无法避免：
+详细大家学习了这么多项目，代码生成工具也一定见识了很多。但是今天我们并不介绍手写的代码生成模块或Mybatis Generate插件，因为这几种方式对于个人开发都无法避免：
 
 1. 学习成功高（功能开发起来比较复杂）
 2. 可定制化差（很多代码生成功能并不支持自定义生成代码的模板）
+3. 过于All In One，我还是觉得专业的事情交给专业的软件去做
 
-在本项目中，综合了一下，使用`EasyCode`插件生成代码。
+在本项目中综合了一下，使用`EasyCode`插件生成代码。
 
 > Tips：本项目代码生成模板代码
 
@@ -20,11 +21,11 @@
 
 在idea -> settings -> plugins中搜索 `EasyCode` ，注意名称避免下载错了：
 
-![](http://cdn.tycoding.cn/docs/MIK-fy9rIu.png)
+![](http://cdn.tycoding.cn/docs/202302031449491.png)
 
 安装之后在Other Settings中可以看到EasyCode的配置，如下：
 
-![](http://cdn.tycoding.cn/docs/MIK-Fl2LlW.png)
+![image-20230203145014819](http://cdn.tycoding.cn/docs/202302031450846.png)
 
 可以看到，目前版本中已经支持将模板导出到本地，最终生成的是`.json`文件，本项目的模板文件在文章最后会介绍。
 
@@ -84,11 +85,13 @@
 
 [https://github.com/Tumo-Team/tumo-boot/blob/main/generate/EasyCodeConfig.json](https://github.com/Tumo-Team/tumo-boot/blob/main/generate/EasyCodeConfig.json)
 
-将此文件导入到EasyCode插件中：
+将项目根目录中`generate`下的json文件导入到EasyCode插件中：
 
-![](http://cdn.tycoding.cn/docs/MIK-QulmHe.png)
+![image-20230203145809876](http://cdn.tycoding.cn/docs/202302031458908.png)
 
-![](http://cdn.tycoding.cn/docs/MIK-z3JrUZ.png)
+![image-20230203145832274](http://cdn.tycoding.cn/docs/202302031458303.png)
+
+![image-20230203145850707](http://cdn.tycoding.cn/docs/202302031458734.png)
 
 可以看到Template中已经有本项目的前后端模板配置了：
 
@@ -101,4 +104,20 @@
 然后结合项目进行自定义配置，最下方选择 `tumo-boot`模板即可：
 
 ![](http://cdn.tycoding.cn/docs/MIK-PNkoaE.png)
+
+### 测试
+
+假设我们新建了一张表，同样在IDEA右侧面板的Database中找到此表：
+
+![image-20230203145554859](http://cdn.tycoding.cn/docs/202302031455902.png)
+
+如上表`db_test`中一共创建了三个字段，下面选中此表右键选择EasyCode -> Generate Code：
+
+![image-20230203150447556](http://cdn.tycoding.cn/docs/202302031504604.png)
+
+例如我们在项目中创建`modules/test`文件夹用于存储我们新的模块代码，然后在EasyCode的`Package`中选择此文件夹，`Path`选项会自动同步不用管，然后勾选`弹窗选是`，点击OK：
+
+![image-20230203150727927](http://cdn.tycoding.cn/docs/202302031507976.png)
+
+如上会自动生成此表的CRUD代码，到这里就可以直接启动项目进行测试了。
 

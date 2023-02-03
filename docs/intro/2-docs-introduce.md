@@ -17,7 +17,7 @@
 
 > Tips：关于TumoBoot项目文档
 
-本文档将手把手教你入门SpringBoot RBAC项目开发，提供最基础的文档。如果你已经熟悉了SPringBoot开发，你可以学习 **Tumo-Cloud：**：[https://github.com/Tumo-Team/tumo-cloud](https://github.com/Tumo-Team/tumo-cloud)，Tumo-Cloud将使用最新的微服务技术栈开发。
+本文档将手把手教你入门SpringBoot RBAC项目开发，提供最基础的文档。如果你已经熟悉了SpringBoot开发，你可以学习 **Tumo-Cloud：**：[https://github.com/Tumo-Team/tumo-cloud](https://github.com/Tumo-Team/tumo-cloud)，Tumo-Cloud将使用最新的微服务技术栈开发。
 
 
 

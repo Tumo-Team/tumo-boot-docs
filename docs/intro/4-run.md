@@ -4,7 +4,7 @@
 
 - 前端：基于Node、Vue、Vite开发，使用IDEA或VSCode打开项目都可以，先使用`yarn install`安装依赖再`yarn serve`运行项目即可。
 
-
+> **注意：** 此项目使用了Mysql8.x，因此数据库脚本中包含`utf8mb4_0900_ai_ci`编码，使用低版本数据库时此脚本可能无法导入，需要全局替换下此编码就行了
 
 ## 环境准备
 
@@ -12,11 +12,11 @@
 
 > 后端
 
-![image-20210808201834134](http://tycoding.cn/imgs/20210808201834.png)
+![image-20230203151022421](http://cdn.tycoding.cn/docs/202302031510449.png)
 
 > 前端
 
-![image-20210808201709796](http://tycoding.cn/imgs/20210808201709.png)
+![image-20230203151320379](http://cdn.tycoding.cn/docs/202302031513408.png)
 
 
 
@@ -44,7 +44,11 @@ git clone https://github.com/Tumo-Team/tumo-boot.git
 
 > 1.导入数据库脚本
 
-本项目脚本文件：[https://github.com/Tumo-Team/tumo-boot/tree/main/db](https://github.com/Tumo-Team/tumo-boot/tree/main/db)。此脚本文件中包含了 `create database` 的语句，所以不需手动创建数据库，执行脚本即可。
+本项目脚本文件：[https://github.com/Tumo-Team/tumo-boot/tree/main/db](https://github.com/Tumo-Team/tumo-boot/tree/main/db)。此脚本文件中包含了 `create database` 的语句，所以不需手动创建数据库，直接使用Navicat运行此SQL文件（注意不要在Navicat中选中任何数据库）：
+
+![image-20230203151604646](http://cdn.tycoding.cn/docs/202302031516679.png)
+
+
 
 > 2.修改本地Hosts文件
 
@@ -61,11 +65,7 @@ git clone https://github.com/Tumo-Team/tumo-boot.git
 
 Maven正常加载后，就可以直接启动项目了，显示如下日志证明启动成功：
 
-![image-20210809130145419](http://tycoding.cn/imgs/20210809130145.png)
-
-如日志所示，我们可以访问：`localhost:8090/doc.html` 查看Swagger接口文档：
-
-![image-20210809130309593](http://tycoding.cn/imgs/20210809130309.png)
+![image-20230203151831285](http://cdn.tycoding.cn/docs/202302031518316.png)
 
 
 
