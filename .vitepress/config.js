@@ -137,6 +137,10 @@ function createNav() {
       link: '/docs/extends/',
       items: [
         {
+          text: 'Shell部署',
+          link: '/docs/extends/shell/build',
+        },
+        {
           text: 'Docker部署',
           link: '/docs/extends/docker/1-docker-install',
         },
@@ -378,6 +382,10 @@ function createSidebar() {
 
     '/docs/extends': [
       {
+        text: 'Shell部署',
+        link: '/docs/extends/shell/build',
+      },
+      {
         text: 'Docker部署',
         children: [
           {
@@ -395,10 +403,6 @@ function createSidebar() {
           {
             text: 'TumoBoot构建镜像',
             link: '/docs/extends/docker/4-build-tumo-boot',
-          },
-          {
-            text: 'Docker容器间网络通信',
-            link: '/docs/extends/docker/5-docker-container-net',
           },
         ]
       }
