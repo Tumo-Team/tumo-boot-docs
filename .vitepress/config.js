@@ -27,7 +27,7 @@
 
 function createHead() {
   return [
-    ['meta', { name: 'author', content: 'Vbenjs Team' }],
+    ['meta', { name: 'author', content: 'Tumo-Boot Team' }],
     [
       'meta',
       {
