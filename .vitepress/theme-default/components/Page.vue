@@ -7,6 +7,9 @@
         <Content />
       </div>
 
+      <!-- 自定义Footer -->
+      <div v-html="theme.pageFooterHtml"></div>
+
       <PageFooter />
 
       <NextAndPrevLinks />
@@ -17,8 +20,16 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue'
   import PageFooter from './PageFooter.vue';
   import NextAndPrevLinks from './NextAndPrevLinks.vue';
+  import {
+    useSiteData
+  } from 'vitepress'
+
+  import type { DefaultTheme } from '../config'
+  const siteData = useSiteData<DefaultTheme.Config>()
+  const theme = computed(() => siteData.value.themeConfig)
 </script>
 
 <style scoped>

@@ -68,10 +68,3 @@ Tips：其中`redirect`可以指定重定向地址，这样对于单层节点`pa
 
 ![image-20210322141204519](http://tycoding.cn/imgs/20210322141204.png)
 
-
-
-# 联系
-
-- 个人博客：[http://tycoding.cn](http://tycoding.cn)
-- 微信公众号：程序员涂陌
-- QQ交流群：866685601

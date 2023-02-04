@@ -152,10 +152,3 @@ axios.interceptors.response.use(function (response) {
 
 Tips：其中`store`部分在后期`Vuex`部分讲解，对于Login登录请求、getUserInfo获取用户信息请求、Logout注销请求等需要经过store，大多业务请求无需，本章中不讨论这部分。
 
-
-
-# 联系
-
-- 个人博客：[http://tycoding.cn](http://tycoding.cn)
-- 微信公众号：程序员涂陌
-- QQ交流群：866685601

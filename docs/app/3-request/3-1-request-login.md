@@ -28,10 +28,3 @@
 
 注意看，此时请求头中`Authorization`中的value是 **调用/oauth/token接口返回的Token** ，也就是说在执行`/oauth/token`接口后的所有请求的请求头都要携带Token信息。
 
-
-
-# 联系
-
-- 个人博客：[http://tycoding.cn](http://tycoding.cn)
-- 微信公众号：程序员涂陌
-- QQ交流群：866685601

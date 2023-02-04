@@ -35,9 +35,3 @@ vue-router官方文档：[https://router.vuejs.org/zh/installation.html](https:/
 在 `filterAsyncRoutes` 方法中，可以通过请求后端结果拿到路由JSON，最后赋值到Store中即可。
 
 这一块具体可以查看：[https://github.com/Tumo-Team/Tumo-Boot](https://github.com/Tumo-Team/Tumo-Boot)
-
-# 联系
-
-- 个人博客：[http://tycoding.cn](http://tycoding.cn)
-- 微信公众号：程序员涂陌
-- QQ交流群：866685601
