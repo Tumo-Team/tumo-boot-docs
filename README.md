@@ -51,6 +51,16 @@
 | Vue.js         | 3.x    | [https://cn.vuejs.org/v2/guide/](https://cn.vuejs.org/v2/guide/) |
 | Ant-Design-Vue | 2.x  | [https://www.antdv.com/docs/vue/introduce-cn/](https://www.antdv.com/docs/vue/introduce-cn/) |
 
+## 预览
+
+![image-20230204220030257](http://cdn.tycoding.cn/docs/202302042200288.png)
+
+![image-20230204220123386](http://cdn.tycoding.cn/docs/202302042201412.png)
+![image-20230204220144440](http://cdn.tycoding.cn/docs/202302042201472.png)
+
+![image-20230204220204477](http://cdn.tycoding.cn/docs/202302042202505.png)
+
+![image-20230204220300817](http://cdn.tycoding.cn/docs/202302042203844.png)
 
 ## 本地编译文档
 
